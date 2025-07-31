@@ -5,17 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:garbage_collection_wpf_demo_cs"
         mc:Ignorable="d"
-        Title="Garbage Collection WPF C#" Height="450" Width="800">
-    <Grid
-        Height="450"
-        Width="800"
-        >
-        <!-- TEXTBLOCK: Display Collected Memory. -->
+        Title="Garbage Collection WPF C#"
+        Height="200" Width="400"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid>
+        <!-- Minimalist TextBlock for displaying collected memory -->
         <TextBlock
-            Height="50"
-            Width="400"
             x:Name="garbage_bin"
-            />
-
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="20"
+            FontWeight="Bold"
+            Foreground="Black" />
     </Grid>
 </Window>
